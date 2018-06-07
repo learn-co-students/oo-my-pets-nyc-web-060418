@@ -1,0 +1,1 @@
+garfield = Cat.new("Garfield")
