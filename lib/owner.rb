@@ -1,6 +1,5 @@
 require 'pry'
 class Owner
-  # code goes here
   @@all = []
 
   attr_reader :species
@@ -29,7 +28,6 @@ class Owner
   end
 
   def say_species
-    # binding.pry
     return "I am a #{@species}."
   end
 
@@ -42,7 +40,6 @@ class Owner
   end
 
   def buy_fish(name)
-    # Fish.new(name)
     @pets[:fishes] << Fish.new(name)
   end
 
@@ -84,13 +81,11 @@ class Owner
     end
     @pets.clear
   end
-  # binding.pry
 
   def list_pets
     fish_count = @pets[:fishes].length
     dog_count = @pets[:dogs].length
     cat_count = @pets[:cats].length
     return "I have #{fish_count} fish, #{dog_count} dog(s), and #{cat_count} cat(s)."
-
   end
 end
